@@ -16,10 +16,9 @@ header {
 }
 
 main {
-    padding-left: 25px;
-    background-color: #0f3460;
     color: #d4d4d4;
-    display: flex;
+    display: block;
+    justify-content: space-between;
 }
 
 a {
@@ -29,4 +28,39 @@ a {
 
 a:hover {
     color: #e94560;
+}
+
+section.listaDeCompras {
+    display: flex;
+    justify-content: space-between;
+    background-color: #0f3460;
+    padding-left: 25px;
+}
+figure {
+    font-size: x-small;
+}
+img {
+    width: 50%;
+    }
+
+section.form {
+        display: flex;
+        align-items: center;
+        justify-content: left;
+        background-color: #16213e;
+        padding-left: 20px;
+    }
+
+form {
+        display: flex;
+        vertical-align: bottom;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+input.nombre {
+        text-align: center;
+    }
+label {
+
 }
