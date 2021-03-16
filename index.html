@@ -43,20 +43,41 @@
             </figure>  
         </section> 
         <section class="form">
-            <form action="">
-                <label for="nombre">
-                    <span>Tu nombre</span>
-                    <input class="nombre" type="text" id="nombre" placeholder="ej. pancho"/>
-                </label><br>
-                <label for="Fecha">
-                    <span>Fecha de compra</span>
-                    <input class="fecha" type="date" id="Fecha"/>
-                </label><br>
-                <label for="hora">
-                    <span>Hora de compra</span>
-                    <input class="hora" type="time" id="hora"/>
-                </label>
-            </form>
+            <h2>Gestiona tu compra</h2>
+                <form action="">
+                    <label for="nombre">
+                        <span>Tu nombre</span>
+                        <input class="nombre" type="text" id="nombre" placeholder="ej. pancho" name="nombre" autocomplete="name" required/>
+                    </label>
+                    <label for="direccion">
+                        <span>Tu dirección</span>
+                        <input class="direccion" type="text" id="direccion" placeholder="Av., Calle, etc." name="direccion" autocomplete="address-level1" required/>
+                    </label>
+                    <label for="Fecha">
+                        <span>Fecha de compra</span>
+                        <input class="fecha" type="date" id="Fecha" name="fecha" required/>
+                    </label>
+                    <label for="hora">
+                        <span>Hora de compra</span>
+                        <input class="hora" type="time" id="hora" name="hora" required/>
+                    </label>
+                    <label for="correo">
+                        <span>Tu correo</span>
+                        <input class="correo" type="email" id="correo" name="correo" placeholder="algo@correo.com" autocomplete="email" required/>
+                    </label>
+                    <label for="envios">
+                        <span>Tipo de envío</span>
+                        <input list="envios" name="envios" required/>
+                        <datalist id="envios">
+                            <option value="Servicio postal"></option>
+                            <option value="Paqueteria 1"></option>
+                            <option value="paqueteria 2"></option>
+                            <option value="Marketplace"></option>
+                            <option value="aereo"></option>
+                        </datalist>
+                    </label>
+                    <input class="submitB" type="submit"/>
+                </form>
         </section>
     </main>
     <footer>

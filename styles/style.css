@@ -14,7 +14,12 @@ header {
     padding: 0px 20px 0px 20px;
     align-items: center;
 }
-
+header h2 {
+    margin-bottom: 0;
+    }
+header h2::after {
+    content: " ||| "
+}
 main {
     color: #d4d4d4;
     display: block;
@@ -36,31 +41,62 @@ section.listaDeCompras {
     background-color: #0f3460;
     padding-left: 25px;
 }
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
 figure {
     font-size: x-small;
+    align-items: center;
 }
 img {
     width: 50%;
+    border-radius: 3px;
     }
 
 section.form {
-        display: flex;
-        align-items: center;
-        justify-content: left;
+        display: block;
         background-color: #16213e;
-        padding-left: 20px;
+        padding-left: 20px;     
+    }
+    h2 {
+        margin-top: 0px;
+        padding-top: 2px;
     }
 
 form {
-        display: flex;
-        vertical-align: bottom;
+        display: block;
         align-items: center;
-        justify-content: space-between;
+        width: 300px;
     }
 
-input.nombre {
+input.nombre,
+input.direccion,
+input.correo {
         text-align: center;
     }
 label {
+    display: flex;
+    justify-content: space-between;
+}
+span {
+    padding-right: 10px;
+}
 
+input.submitB {
+    font-family: 'Montserrat';
+    background-color: #0f3460;
+    color: #d4d4d4;
+    border-radius: 5px;
+    margin-left: 243px;
+    margin-top: 2px;
+    border-bottom-color: currentColor;
+    border-right-color: currentColor;
+}
+
+input.submitB:hover {
+    background-color: #e94560;
+    color: #0f3460;
+    cursor: pointer;
 }
